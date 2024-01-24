@@ -1,0 +1,44 @@
+.coin-container{
+    display: flex;
+}
+.coin-sidebar{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 250;
+    border-right: 2px solid grey;
+}
+.market-data{
+    align-self: start;
+    padding: 25px;
+    padding-top: 10px;
+    width: 100%;
+}
+@media screen and (max-width: 1300px) {
+    .coin-sidebar {
+     width: 100%;
+    }
+    .coin-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .market-data{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    .market-data{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 400px) {
+    .market-data{
+        align-items: flex-start;
+    }
+}
+
